@@ -1,0 +1,1 @@
+Allows us to extract the values from objects, arrays and function parameters.
