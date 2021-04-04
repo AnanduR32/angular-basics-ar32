@@ -1,1 +1,1 @@
-# angular-basics-ar32
+# Typescript basics
