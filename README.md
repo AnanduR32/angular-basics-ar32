@@ -4,8 +4,11 @@ Every time a new component is created 4 files are created:
 * component.css : Styling 
 * component.html : Frontend
 * component.spec.ts : For testing purpose
-* component.ts : Backend
+* component.ts : Backend  
 
+For a component to be available to other components and services, the component must belong to a NgModule.  
+A component is declared to be belonging to a NgModule by specifying the component name in the 'declarations: [...]' array property of the @NgModule decorator.  
+There is atleast one module in each angular app, AppModule is by default provided root module.
 
 ### Decorators 
 They are placed before a class to specify whether the class is a module or a component.  
@@ -21,3 +24,10 @@ The various properties of a component type decorator are:
 * selector: 
 * templateUrl: Specifies the frontend view page for the particular backend component class
 * styleUrls: Location of styling code
+
+The various properties of a NgModule type decorator are:
+* declarations: A component is declared to be belonging to a NgModule by specifying the component name in the 'declarations: [...]' array.
+* exports: Allows other angular application to import the particular module.
+* imports: To import third-party functions/libraries/modules into the angular application.
+* providers: 
+* bootstrap: 
