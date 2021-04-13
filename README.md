@@ -21,7 +21,7 @@ They help distinguish between classes.
 The above two decorators are parameterized and each take an input which is an object that specify the properties of that class.
 
 The various properties of a component type decorator are: 
-* selector: To refer the component html code that will replace the html template directive in a parent component.
+* selector: To refer the component html code that will replace the html template directive in a parent component. Names a component with an appropriate identifier which can be used to point to the component from a parent module/component, or a module from the main module.
 * templateUrl: Specifies the frontend view page for the particular backend component class
 * styleUrls: Location of styling code
 
