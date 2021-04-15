@@ -1,5 +1,7 @@
 # Typescript basics
 
+Component controls a patch of screen called a view whose application logic is defined in a class. 
+
 Every time a new component is created 4 files are created:
 * component.css : Styling 
 * component.html : Frontend
@@ -31,3 +33,17 @@ The various properties of a NgModule type decorator are:
 * imports: To import third-party functions/libraries/modules into the angular application.
 * providers: Provide services to the compoenents 
 * bootstrap: Tells which is the main component of the module. The platformBrowserDynamic().bootstrapModule(AppModule) in main.ts file tells that the "AppModule" module is the entry point or the main module for the angular app.
+
+### Data binding 
+One way string interpolation allows us to use typescript variables in the html view using double curly brackets '{{<variable in component.ts file>}}'  
+  
+### Property binding 
+One way manipulation value of property of an attribute (html tag) in the view template using square brackets '[]'. Where a property is bound to a typescript variable within the component.ts file.   
+  eg: <button [disabled] = "flag">, if flag==true, then button diabled, else if flag==false then button is enabled.  
+
+### Event binding
+It allows information to flow from view to the component when some event occurs/is triggered.   
+  eg: <button (click) = "sendMessage($event)">, upon button click the function sendMessage() in component is called and the event properties are passed as arguments during the function call.   
+
+### Two-way data binding
+from view to component and vice-verse. Uses a NgModel object to pass data to a variable which is part of the FormsModule which has to be imported from '@angular/forms'; 
